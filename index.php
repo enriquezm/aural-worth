@@ -18,7 +18,7 @@ get_header();
 <!-- Banner -->
 				<section id="banner">
 					<div class="content">
-						<h1>Magna etiam</h1>
+						<h1>AuralWorth Acoustics</h1>
 						<p>Ipsum dolor sed consequat adipiscing magna</p>
 					</div>
 					<a href="#first" class="more scrolly">Learn More</a>
@@ -63,7 +63,7 @@ get_header();
 			<!-- Section -->
 				<section class="main">
 					<header>
-						<h2>Mauris sed lorem</h2>
+						<h2>Team</h2>
 						<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Sed consequat amet dolor magna consequat. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
 					</header>
 					<div class="inner">
