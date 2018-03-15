@@ -21,7 +21,7 @@
 		<title>Untitled</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<?php wp_head() ?>
 	</head>
 	<body>
 
@@ -33,30 +33,13 @@
 
 					<!-- Logo -->
 						<div class="logo">
-							<a href="index.html"><strong>Relativity</strong> by Pixelarity</a>
+							<a href="index.html"><strong>AuralWorth</strong> Acoustics</a>
 						</div>
 
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Home</a></li>
-								<li>
-									<a href="#" class="icon fa-angle-down">Dropdown</a>
-									<ul>
-										<li><a href="#">Option One</a></li>
-										<li><a href="#">Option Two</a></li>
-										<li><a href="#">Option Three</a></li>
-										<li>
-											<a href="#">Submenu</a>
-											<ul>
-												<li><a href="#">Option One</a></li>
-												<li><a href="#">Option Two</a></li>
-												<li><a href="#">Option Three</a></li>
-												<li><a href="#">Option Four</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
 								<li><a href="generic.html">Generic</a></li>
 								<li><a href="elements.html">Elements</a></li>
 							</ul>
