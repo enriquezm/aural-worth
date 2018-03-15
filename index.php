@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-<!-- Banner -->
+				<!-- Banner -->
 				<section id="banner">
 					<div class="content">
 						<h1>AuralWorth Acoustics</h1>
@@ -24,43 +24,45 @@ get_header();
 					<a href="#first" class="more scrolly">Learn More</a>
 				</section>
 
-			<!-- Section -->
+				<!-- Showcase Section -->
 				<section class="main alt" id="first">
 					<header>
 						<h2>Fusce sed adipiscing</h2>
 						<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Sed consequat amet dolor magna consequat. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
 					</header>
+
 					<div class="inner">
-						<article class="post style2">
-							<div class="content">
-								<header>
-									<span class="category">Erat lacinia</span>
-									<h3>Nisl euismod</h3>
-								</header>
-								<p>Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec sed lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam magna tempus.</p>
-								<ul class="actions">
-									<li><a href="#" class="button next">Learn More</a></li>
-								</ul>
-							</div>
-							<div class="image" data-position="center"><img src="images/pic05.jpg" alt="" /></div>
-						</article>
-						<article class="post style2 alt">
-							<div class="content">
-								<header>
-									<span class="category">Magna sed</span>
-									<h3>Integer nulla</h3>
-								</header>
-								<p>Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec sed lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam magna tempus.</p>
-								<ul class="actions">
-									<li><a href="#" class="button next">Learn More</a></li>
-								</ul>
-							</div>
-							<div class="image" data-position="center"><img src="images/pic06.jpg" alt="" /></div>
-						</article>
+						<?php if (have_posts()) : ?>
+							<?php while (have_posts()) : the_post(); $count++;
+								$index = $wp_query->current_post + 1;
+							?>
+								<article id="post-<?php the_ID(); ?>" class="post style2 <?php if ($index % 2 == 0 ? print "alt" : "") ?>">
+									<div class="content">
+										<header>
+											<?php
+												$categories = get_the_category();
+												$single_category;
+												if ( !empty($categories) ) {
+													$single_category = esc_html( $categories[0]->name );
+												}
+											 ?>
+											<span class="category"><?php echo $single_category; ?></span>
+											<h3><?php the_title(); ?></h3>
+										</header>
+										<p><?php the_excerpt(); ?></p>
+										<ul class="actions">
+											<li><a href="<?php the_permalink(); ?>" class="button next">Learn More</a></li>
+										</ul>
+									</div>
+									<div class="image" data-position="center"><img src="http://localhost:8888/wordpress/wp-content/uploads/2018/03/pic05.jpg" alt="" /></div>
+								</article>
+							<?php endwhile; ?>
+						<?php endif; ?>
+
 					</div>
 				</section>
 
-			<!-- Section -->
+			<!-- Team Section -->
 				<section class="main">
 					<header>
 						<h2>Team</h2>
@@ -68,31 +70,30 @@ get_header();
 					</header>
 					<div class="inner">
 						<ul class="faces">
-							<li>
-								<span class="image"><img src="images/pic01.jpg" alt="" /></span>
-								<h3>Jane Doe</h3>
-								<p>Sed magna etiam</p>
-							</li>
-							<li>
-								<span class="image"><img src="images/pic02.jpg" alt="" /></span>
-								<h3>John Smith</h3>
-								<p>Ipsum et dolor</p>
-							</li>
-							<li>
-								<span class="image"><img src="images/pic03.jpg" alt="" /></span>
-								<h3>Kate Anderson</h3>
-								<p>Euismod convallis</p>
-							</li>
-							<li>
-								<span class="image"><img src="images/pic04.jpg" alt="" /></span>
-								<h3>Alex Marks</h3>
-								<p>Mauris aliquam</p>
-							</li>
+
+							<?php
+							$args = array(
+								'post_type' => 'members',
+								'post_status' => 'publish'
+							);
+							$members = new WP_Query( $args );
+							if($members->have_posts() ):
+								while ($members->have_posts() ) :
+									$members->the_post();
+							?>
+								<li>
+									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<h3><?php the_title(); ?></h3>
+									<p><?php the_excerpt(); ?></p>
+								</li>
+							<?php endwhile; ?>
+							<?php wp_reset_postdata(); ?>
+							<?php endif; ?>
 						</ul>
 					</div>
 				</section>
 
-			<!-- Section -->
+			<!-- Blog Posts Section -->
 				<section class="main accent2">
 					<header>
 						<h2>Egestas phasellus</h2>
@@ -141,7 +142,7 @@ get_header();
 					</div>
 				</section>
 
-			<!-- Section -->
+			<!-- Contact Section -->
 				<section class="main alt special">
 					<header>
 						<h2>Get in touch</h2>

@@ -25,3 +25,28 @@ function aural_worth_enqueue_assets() {
   wp_enqueue_script( 'aural-worth-js' , get_template_directory_uri() . '/assets/js/main.js' );
 }
 add_action( 'wp_enqueue_scripts' , 'aural_worth_enqueue_assets' );
+
+// Team Members Custome Post Type
+function create_members_posttype() {
+  register_post_type( 'members',
+  // CPT Options
+    array(
+      'labels' => array(
+          'name' => __( 'Team Members' ),
+          'singular_name' => __( 'Member' ),
+          'description' => __('People who work on the AuralWorth Acoustics team.')
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'members'),
+      'supports' => array(
+        'title',
+        'editor',
+        'excerpt',
+        'thumbnail'
+      )
+    )
+  );
+}
+// Hooking up our function to theme setup
+add_action( 'init', 'create_members_posttype' );
