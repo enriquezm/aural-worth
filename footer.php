@@ -21,7 +21,7 @@
 						<li><a href="#" class="icon alt fa-phone"><span class="label">Phone</span></a></li>
 						<li><a href="#" class="icon alt fa-envelope-o"><span class="label">Email</span></a></li>
 					</ul>
-					<p class="copyright">&copy; Untitled. All rights reserved.</p>
+					<p class="copyright">&copy; Auralworth Acoustics, LLC. All rights reserved.</p>
 				</footer>
 
 		</div>
