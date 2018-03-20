@@ -18,8 +18,8 @@ get_header();
 				<!-- Banner -->
 				<section id="banner">
 					<div class="content">
-						<h1>AuralWorth Acoustics</h1>
-						<p>Ipsum dolor sed consequat adipiscing magna</p>
+						<h1>Auralworth Acoustics</h1>
+						<p>Design buildings worthy of people’s ears.</p>
 					</div>
 					<a href="#first" class="more scrolly">Learn More</a>
 				</section>
@@ -27,8 +27,8 @@ get_header();
 				<!-- Showcase Section -->
 				<section class="main alt" id="first">
 					<header>
-						<h2>Fusce sed adipiscing</h2>
-						<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Sed consequat amet dolor magna consequat. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
+						<h2>ACOUSTIC CONSULTING SERVICES</h2>
+						<p>Sound advice worth listening to</p>
 					</header>
 
 					<div class="inner">
@@ -46,7 +46,6 @@ get_header();
 													$single_category = esc_html( $categories[0]->name );
 												}
 											 ?>
-											<span class="category"><?php echo $single_category; ?></span>
 											<h3><?php the_title(); ?></h3>
 										</header>
 										<p><?php the_excerpt(); ?></p>
@@ -65,8 +64,8 @@ get_header();
 			<!-- Team Section -->
 				<section class="main">
 					<header>
-						<h2>Team</h2>
-						<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Sed consequat amet dolor magna consequat. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
+						<h2>CONSULTANT</h2>
+						<p>Here to listen and give thorough but simplified advice.</p>
 					</header>
 					<div class="inner">
 						<ul class="faces">
@@ -96,15 +95,14 @@ get_header();
 			<!-- Blog Posts Section -->
 				<section class="main accent2">
 					<header>
-						<h2>Egestas phasellus</h2>
+						<h2>PROJECTS</h2>
 						<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Sed consequat amet dolor magna consequat. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
 					</header>
 					<div class="inner">
 						<article class="post alt">
 							<div class="content">
 								<header>
-									<span class="category">Lorem ipsum</span>
-									<h3>Finibus et magna</h3>
+									<h3>HOSPITALITY</h3>
 								</header>
 								<p>Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec sed lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam magna tempus. Lorem ipsum sit tempus amet feugiat.</p>
 								<ul class="actions">
@@ -116,8 +114,7 @@ get_header();
 						<article class="post">
 							<div class="content">
 								<header>
-									<span class="category">Sed etiam</span>
-									<h3>Nam adipiscing</h3>
+									<h3>EDUCATION</h3>
 								</header>
 								<p>Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec sed lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam magna tempus. Lorem ipsum sit tempus amet feugiat.</p>
 								<ul class="actions">
@@ -129,8 +126,7 @@ get_header();
 						<article class="post alt">
 							<div class="content">
 								<header>
-									<span class="category">Sapien erat</span>
-									<h3>Amet sed nullam</h3>
+									<h3>CONVENTION</h3>
 								</header>
 								<p>Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec sed lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam magna tempus. Lorem ipsum sit tempus amet feugiat.</p>
 								<ul class="actions">
@@ -143,10 +139,10 @@ get_header();
 				</section>
 
 			<!-- Contact Section -->
-				<section class="main alt special">
+				<section id="contact" class="main alt special">
 					<header>
 						<h2>Get in touch</h2>
-						<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Sed consequat amet dolor magna consequat. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
+						<p>Let us help you.  Leave a message below with a description of the project or noise issue.  We’ll get back to you soon.</p>
 					</header>
 					<div class="inner narrow">
 						<form action="#" method="post">
