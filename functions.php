@@ -26,6 +26,9 @@ function aural_worth_enqueue_assets() {
 }
 add_action( 'wp_enqueue_scripts' , 'aural_worth_enqueue_assets' );
 
+// Add thumbnail support for posts
+add_theme_support( 'post-thumbnails' );
+
 // Team Members Custome Post Type
 function create_members_posttype() {
   register_post_type( 'members',
