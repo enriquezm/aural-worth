@@ -53,7 +53,7 @@ get_header();
 											<li><a href="<?php the_permalink(); ?>" class="button next">Learn More</a></li>
 										</ul>
 									</div>
-									<div class="image" data-position="center"><img src="http://localhost:8888/wordpress/wp-content/uploads/2018/03/pic05.jpg" alt="" /></div>
+									<div class="image" data-position="center"><img src="<?php echo get_the_post_thumbnail(); ?>" alt="" /></div>
 								</article>
 							<?php endwhile; ?>
 						<?php endif; ?>
