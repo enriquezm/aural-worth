@@ -99,42 +99,32 @@ get_header();
 						<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Sed consequat amet dolor magna consequat. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
 					</header>
 					<div class="inner">
-						<article class="post alt">
+						<?php
+						$args = array(
+							'post_type' => 'projects',
+							'post_status' => 'publish'
+						);
+						$projects = new WP_Query( $args );
+						if($projects->have_posts() ):
+							while ($projects->have_posts() ) :
+								$projects->the_post();
+								$posts_index = $projects->current_post + 1;
+						?>
+						<article id="project-post-<?php the_ID(); ?>" class="post <?php if ($posts_index % 2 == 0 ? print "alt" : "") ?>">
 							<div class="content">
 								<header>
-									<h3>HOSPITALITY</h3>
+									<h3><?php the_title(); ?></h3>
 								</header>
-								<p>Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec sed lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam magna tempus. Lorem ipsum sit tempus amet feugiat.</p>
+								<p><?php the_excerpt(); ?></p>
 								<ul class="actions">
 									<li><a href="#" class="button next">Learn More</a></li>
 								</ul>
 							</div>
-							<div class="image" data-position="center"><img src="images/pic07.jpg" alt="" /></div>
+							<div class="image" data-position="center"><img src="<?php get_the_post_thumbnail(); ?>" alt="" /></div>
 						</article>
-						<article class="post">
-							<div class="content">
-								<header>
-									<h3>EDUCATION</h3>
-								</header>
-								<p>Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec sed lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam magna tempus. Lorem ipsum sit tempus amet feugiat.</p>
-								<ul class="actions">
-									<li><a href="#" class="button next">Learn More</a></li>
-								</ul>
-							</div>
-							<div class="image" data-position="center"><img src="images/pic08.jpg" alt="" /></div>
-						</article>
-						<article class="post alt">
-							<div class="content">
-								<header>
-									<h3>CONVENTION</h3>
-								</header>
-								<p>Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec sed lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam magna tempus. Lorem ipsum sit tempus amet feugiat.</p>
-								<ul class="actions">
-									<li><a href="#" class="button next">Learn More</a></li>
-								</ul>
-							</div>
-							<div class="image" data-position="center"><img src="images/pic09.jpg" alt="" /></div>
-						</article>
+							<?php endwhile; ?>
+							<?php wp_reset_postdata(); ?>
+						<?php endif; ?>
 					</div>
 				</section>
 
