@@ -29,15 +29,18 @@ add_action( 'wp_enqueue_scripts' , 'aural_worth_enqueue_assets' );
 // Add thumbnail support for posts
 add_theme_support( 'post-thumbnails' );
 
-// Team Members Custome Post Type
-function create_members_posttype() {
+/**
+ * Custom Post Type Creation
+ */
+function create_posttypes() {
+  // Team Members Custome Post Type
   register_post_type( 'members',
-  // CPT Options
+    // CPT Options
     array(
       'labels' => array(
           'name' => __( 'Team Members' ),
           'singular_name' => __( 'Member' ),
-          'description' => __('People who work on the AuralWorth Acoustics team.')
+          'description' => __( 'People who work on the AuralWorth Acoustics team.' )
       ),
       'public' => true,
       'has_archive' => true,
@@ -50,6 +53,27 @@ function create_members_posttype() {
       )
     )
   );
+
+  // Project Custom Post type
+  register_post_type( 'projects',
+    // Options
+    array(
+      'labels' => array(
+        'name' => __( 'Projects' ),
+        'singular_name' => __( 'Project' ),
+        'description' => __( 'My projects' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'projects'),
+      'supports' => array(
+        'title',
+        'editor',
+        'excerpt',
+        'thumbnail'
+      )
+    )
+  );
 }
 // Hooking up our function to theme setup
-add_action( 'init', 'create_members_posttype' );
+add_action( 'init', 'create_posttypes' );
