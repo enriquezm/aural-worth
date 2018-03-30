@@ -39,7 +39,7 @@
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
+								<li class="current"><a href="/">Home</a></li>
 								<li><a href="#contact">Contact</a></li>
 							</ul>
 						</nav>
