@@ -33,7 +33,7 @@
 
 					<!-- Logo -->
 						<div class="logo">
-							<a href="index.html"><strong>AuralWorth</strong> Acoustics</a>
+							<a href="/"><strong>AuralWorth</strong> Acoustics</a>
 						</div>
 
 					<!-- Nav -->
