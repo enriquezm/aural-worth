@@ -49,9 +49,9 @@ get_header();
 											<h3><?php the_title(); ?></h3>
 										</header>
 										<p><?php the_excerpt(); ?></p>
-										<ul class="actions">
+										<!-- <ul class="actions">
 											<li><a href="<?php the_permalink(); ?>" class="button next">Learn More</a></li>
-										</ul>
+										</ul> -->
 									</div>
 									<div class="image" data-position="center"><img src="<?php echo get_the_post_thumbnail(); ?>" alt="" /></div>
 								</article>
@@ -116,9 +116,9 @@ get_header();
 									<h3><?php the_title(); ?></h3>
 								</header>
 								<p><?php the_excerpt(); ?></p>
-								<ul class="actions">
+								<!-- <ul class="actions">
 									<li><a href="#" class="button next">Learn More</a></li>
-								</ul>
+								</ul> -->
 							</div>
 							<div class="image" data-position="center"><img src="<?php get_the_post_thumbnail(); ?>" alt="" /></div>
 						</article>
