@@ -81,7 +81,7 @@ get_header();
 									$members->the_post();
 							?>
 								<li>
-									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+									<span class="image"><img src="<?php echo get_the_post_thumbnail(); ?>" alt="" /></span>
 									<h3><?php the_title(); ?></h3>
 									<p><?php the_excerpt(); ?></p>
 								</li>
