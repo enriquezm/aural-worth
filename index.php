@@ -62,7 +62,7 @@ get_header();
 				</section>
 
 			<!-- Team Section -->
-				<section class="main">
+				<section class="main accent1">
 					<header>
 						<h2>CONSULTANT</h2>
 						<p>Here to listen and give thorough but simplified advice.</p>
@@ -81,7 +81,9 @@ get_header();
 									$members->the_post();
 							?>
 								<li>
-									<span class="image"><?php echo get_the_post_thumbnail(); ?></span>
+									<span class="image">
+										<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt />
+									</span>
 									<h3><?php the_title(); ?></h3>
 									<p><?php the_excerpt(); ?></p>
 								</li>
