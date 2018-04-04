@@ -92,42 +92,6 @@ get_header();
 					</div>
 				</section>
 
-			<!-- Blog Posts Section -->
-				<section class="main accent2">
-					<header>
-						<h2>PROJECTS</h2>
-						<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Sed consequat amet dolor magna consequat. Lorem ipsum dolor amet nullam sed etiam veroeros.</p>
-					</header>
-					<div class="inner">
-						<?php
-						$args = array(
-							'post_type' => 'projects',
-							'post_status' => 'publish'
-						);
-						$projects = new WP_Query( $args );
-						if($projects->have_posts() ):
-							while ($projects->have_posts() ) :
-								$projects->the_post();
-								$posts_index = $projects->current_post + 1;
-						?>
-						<article id="project-post-<?php the_ID(); ?>" class="post <?php if ($posts_index % 2 == 0 ? print "alt" : "") ?>">
-							<div class="content">
-								<header>
-									<h3><?php the_title(); ?></h3>
-								</header>
-								<p><?php the_excerpt(); ?></p>
-								<!-- <ul class="actions">
-									<li><a href="#" class="button next">Learn More</a></li>
-								</ul> -->
-							</div>
-							<div class="image" data-position="center"><img src="<?php get_the_post_thumbnail(); ?>" alt="" /></div>
-						</article>
-							<?php endwhile; ?>
-							<?php wp_reset_postdata(); ?>
-						<?php endif; ?>
-					</div>
-				</section>
-
 			<!-- Contact Section -->
 				<section id="contact" class="main alt special">
 					<header>
