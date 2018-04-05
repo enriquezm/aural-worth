@@ -102,7 +102,7 @@ get_header();
 					</header>
 
 					<div class="inner narrow">
-						<form action="https://formspree.io/ronfojas@gmail.com" method="POST">
+						<form action="https://formspree.io/ronn.fojas@auralworth.com" method="POST">
 							<div class="field half">
 								<input name="name" id="name" placeholder="Name" type="text" />
 							</div>
