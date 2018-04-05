@@ -1990,17 +1990,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 				text-transform: none !important;
 			}
 
-			input[type="submit"].next:before,
-			input[type="reset"].next:before,
-			input[type="button"].next:before,
-			button.next:before,
-			.button.next:before {
-				content: '\f178';
-				float: right;
-				line-height: inherit;
-				margin: 0 -0.25rem 0 0.5rem;
-			}
-
 		input[type="submit"].icon:before,
 		input[type="reset"].icon:before,
 		input[type="button"].icon:before,
@@ -4041,11 +4030,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 				text-transform: none !important;
 			}
 
-			#header > .navPanelToggle:before {
-				content: '\f0c9';
-				margin: 0 0 0 0.625rem;
-				float: right;
-			}
 
 		@media screen and (max-width: 980px) {
 

@@ -14,7 +14,7 @@ function aural_worth_enqueue_assets() {
 
   /* template's primary css file */
   wp_enqueue_style( 'aural-worth-styling' , get_template_directory_uri() . '/assets/css/style.css' );
-  wp_enqueue_style( 'font-awesome' , get_template_directory_uri() . 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+  wp_enqueue_style( 'font-awesome' , 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'jquery-dropotron' , get_template_directory_uri() . '/assets/js/jquery.dropotron.min.js' );
