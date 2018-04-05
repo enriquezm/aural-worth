@@ -33,7 +33,9 @@
 
 					<!-- Logo -->
 						<div class="logo">
-							<a href="/"><strong>AuralWorth</strong> Acoustics</a>
+							<a class="brand" href="/">
+								AuralWorth Acoustics
+							</a>
 						</div>
 
 					<!-- Nav -->
