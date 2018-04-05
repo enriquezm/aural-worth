@@ -134,13 +134,14 @@ get_header();
 						<h2>Get in touch</h2>
 						<p>Let us help you.  Leave a message below with a description of the project or noise issue.  We’ll get back to you soon.</p>
 					</header>
+					
 					<div class="inner narrow">
-						<form action="#" method="post">
+						<form action="https://formspree.io/enri.myles@gmail.com" method="POST">
 							<div class="field half">
 								<input name="name" id="name" placeholder="Name" type="text" />
 							</div>
 							<div class="field half">
-								<input name="email" id="email" placeholder="Email" type="email" />
+								<input name="_replyto" id="email" placeholder="Email" type="email" />
 							</div>
 							<div class="field">
 								<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
