@@ -34,7 +34,7 @@
 					<!-- Logo -->
 						<div class="logo">
 							<a class="brand" href="/">
-								AuralWorth Acoustics
+								<?php echo get_bloginfo( 'name' ); ?>
 							</a>
 						</div>
 
