@@ -4480,6 +4480,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		font-family: Dual;
 	}
 
+	.logo-img {
+		margin-top: 12px;
+	}
+
 	.logo-vert-bottom {
 		margin-left: 12px;
 		font-size: 70%;
