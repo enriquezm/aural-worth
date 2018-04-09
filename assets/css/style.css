@@ -4119,7 +4119,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 			margin-top: 2rem;
 			opacity: 1;
 		}
-		
+
 
 			#banner > .content input, #banner > .content select, #banner > .content textarea {
 				color: #ffffff;
@@ -4474,4 +4474,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 		-ms-transform: translateX(0);
 		transform: translateX(0);
 		visibility: visible;
+	}
+
+	.logo-font {
+		font-family: Dual;
+	}
+
+	.logo-vert-bottom {
+		margin-left: 12px;
+		font-size: 70%;
+		letter-spacing: 15px;
 	}
