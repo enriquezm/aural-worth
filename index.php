@@ -18,8 +18,7 @@ get_header();
 				<!-- Banner -->
 				<section id="banner">
 					<div class="content">
-						<img width="75px" src="<?php echo get_template_directory_uri() . '/assets/images/white-logo.svg'; ?>" />
-						<h1>Auralworth Acoustics</h1>
+						<img width="300px" src="<?php echo get_template_directory_uri() . '/assets/images/auralworth-logo-vertical.svg'; ?>" />
 						<p>Design buildings worthy of people’s ears.</p>
 					</div>
 					<a href="#first" class="more scrolly">Learn More</a>
