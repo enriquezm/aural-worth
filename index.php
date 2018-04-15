@@ -94,6 +94,15 @@ get_header();
 					</div>
 				</section>
 
+				<!-- Blog Posts Section -->
+				<section class="main accent2">
+					<header>
+						<h2>PROJECTS</h2>
+						<p>Design buildings to perform as intended.</p>
+					</header>
+
+				</section>
+
 			<!-- Contact Section -->
 				<section id="contact" class="main alt special">
 					<header>
