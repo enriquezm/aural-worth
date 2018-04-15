@@ -84,8 +84,8 @@ get_header();
 									<span class="image">
 										<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt />
 									</span>
-									<h3><?php the_title(); ?></h3>
-									<p><?php the_excerpt(); ?></p>
+									<h3><?php echo(the_title()); ?></h3>
+									<p><?php echo(get_the_excerpt()); ?></p>
 								</li>
 							<?php endwhile; ?>
 							<?php wp_reset_postdata(); ?>
