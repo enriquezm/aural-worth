@@ -117,7 +117,7 @@ get_header();
 					      <header>
 					        <h3><?php the_title(); ?></h3>
 					      </header>
-					      <p><?php the_excerpt(); ?></p>
+					      <p><?php echo get_the_excerpt(); ?></p>
 					      <!-- <ul class="actions">
 					      <li><a href="#" class="button next">Learn More</a></li>
 					      </ul> -->
