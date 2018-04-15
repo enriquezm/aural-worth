@@ -122,7 +122,7 @@ get_header();
 					      <li><a href="#" class="button next">Learn More</a></li>
 					      </ul> -->
 					    </div>
-					    <div class="image" data-position="center"><img src="<?php get_the_post_thumbnail(); ?>" alt="" /></div>
+					    <div class="image" data-position="center"><img src="<?php echo get_the_post_thumbnail(); ?>" alt="" /></div>
 					  </article>
 
 					  <?php endwhile; ?>
