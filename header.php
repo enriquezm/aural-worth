@@ -34,7 +34,7 @@
 					<!-- Logo -->
 						<div class="logo">
 							<a class="brand logo-font" href="/">
-								<img class="logo-img" width="150px" src="<?php echo get_template_directory_uri() . '/assets/images/auralworth-logo-horizontal.svg'; ?>" />
+								<?php get_template_part('assets/images/inline', 'logohorizontal.svg'); ?>
 							</a>
 						</div>
 
