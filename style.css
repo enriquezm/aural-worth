@@ -25,6 +25,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   font-weight: 300;
 }
 
+/* Navigation logo */
 .logo-mark {
   width: 30px;
   margin-right: 5px;
@@ -32,4 +33,20 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 .logo-mark .logo-stroke {
   stroke: red;
+}
+
+g#logo-horizontal path.letters {
+  fill: black;
+}
+
+g#logo-horizontal g.logo path{
+  stroke: black;
+}
+
+header.alt g#logo-horizontal path.letters {
+  fill: white;
+}
+
+header.alt g#logo-horizontal g.logo path {
+  stroke : white;
 }
