@@ -21,7 +21,7 @@
 						<!-- <li><a href="#" class="fa fa-phone"><span class="label">Phone</span></a></li>
 						<li><a href="#" class="fa fa-envelope"><span class="label">Email</span></a></li> -->
 					</ul>
-					<p class="copyright">&copy; Auralworth Acoustics LLC. All rights reserved.</p>
+					<p class="copyright">&copy; Auralworth Acoustics LLC. All rights reserved. <a href="tel:+17027026616">702.702.6616</a></p>
 				</footer>
 
 		</div>
